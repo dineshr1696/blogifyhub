@@ -14,7 +14,7 @@
 <style>
   /* Background Styling */
   body {
-    background: url("22.jpg") center center fixed;
+    background: url("23.jpg") center center fixed;
     background-size: cover;
     position: relative;
   }
@@ -82,7 +82,7 @@
           <a class="nav-link" href="Aboutus.html"><b>About</b></a>
           <a class="nav-link" href="signup.html"><b>Signup</b></a>
           <a class="nav-link" href="login.html"><b>Login</b></a>
-          <a class="nav-link" href="contact.html"><b>Contact</b></a>
+          <a class="nav-link" href="contact.html"><b>Contact Us</b></a>
 
         </div>
       </div>
@@ -91,191 +91,195 @@
 
 
 
-  <div class="container mt-5 pt-5 d-flex justify-content-center align-items-center vh-80">
-    <div class="row w-100">
-      <div class="col-md-6 col-lg-5 mx-auto bg-light p-4 shadow rounded">
-        <h2 class="text-center mb-4">Signup</h2>
-        <form>
-          <div class="mb-3">
-            <label for="user" class="form-label">User Name</label>
-            <input type="text" class="form-control" id="user" placeholder="Enter User Name" name="user">
-          </div>
+  <div class=" d-flex justify-content-center align-items-center "
+    style="min-height: calc(100vh - 56px - 100px); padding-top: 100px; padding-bottom: 50px;">
 
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-          </div>
+    <div class="col-md-6 col-lg-5 mx-auto bg-light p-4 shadow rounded">
+      <h2 class="text-center mb-4">Signup</h2>
+      <form>
+        <div class="mb-3">
+          <label for="user" class="form-label">User Name</label>
+          <input type="text" class="form-control" id="user" placeholder="Enter User Name" name="user">
+        </div>
 
-          <div class="mb-3">
-            <label for="phone" class="form-label">Phone</label>
-            <input type="number" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone">
-          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
 
-          <div class="mb-3">
-            <label for="address" class="form-label">Address</label>
-            <textarea class="form-control" id="address" placeholder="Enter Your Address" name="address"></textarea>
-          </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="number" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone">
+        </div>
 
-          <div class="mb-3">
-            <label class="form-label">Gender</label><br>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="male" name="gender" value="Male">
-              <label class="form-check-label" for="male">Male</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="female" name="gender" value="Female">
-              <label class="form-check-label" for="female">Female</label>
-            </div>
-          </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <textarea class="form-control" id="address" placeholder="Enter Your Address" name="address"></textarea>
+        </div>
 
-          <div class="mb-3">
-            <label class="form-label">Hobbies</label><br>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="travel" name="hobbies" value="Travel">
-              <label class="form-check-label" for="travel">Travel</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="songs" name="hobbies" value="Songs">
-              <label class="form-check-label" for="songs">Songs</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="photography" name="hobbies" value="Photography">
-              <label class="form-check-label" for="photography">Photography</label>
-            </div>
+        <div class="mb-3">
+          <label class="form-label">Gender</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="male" name="gender" value="Male">
+            <label class="form-check-label" for="male">Male</label>
           </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="female" name="gender" value="Female">
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
 
-          <button type="submit" class="btn btn-success w-100">Submit</button>
-        </form>
-      </div>
+        <div class="mb-3">
+          <label class="form-label">Hobbies</label><br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="travel" name="hobbies" value="Travel">
+            <label class="form-check-label" for="travel">Travel</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="songs" name="hobbies" value="Songs">
+            <label class="form-check-label" for="songs">Songs</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="photography" name="hobbies" value="Photography">
+            <label class="form-check-label" for="photography">Photography</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Submit</button>
+      </form>
     </div>
+  </div>
   </div>
   <br>
   <br>
-  <!-- Footer -->
-  <!--   bg-dark class along with text-white?
-        bg-secondary -->
 
-  <footer class="text-center text-lg-start bg-dark  text-white">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-between p-2 bg-secondary text-white">
-      <!-- Left -->
-      <div class="me-5 p-2" style="margin-left: 50px; align-items: center;">
-        <p style="bottom: 2px; padding-top: 1px;"> Get connected with us on social networks:</p>
-      </div>
-      <!-- Left -->
+  <div class="container-fluid px-0">
+    <!-- Footer -->
+    <!--   bg-dark class along with text-white?
+          bg-secondary -->
 
-      <!-- Right -->
-      <div>
-        <a href="">
-          <i class="fa fa-facebook p-3 " style="margin-right: 50px;"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-envelope p-3" style="margin-right: 50px;"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-instagram p-3" style="margin-right: 50px;"></i>
-        </a>
-        <!--   <a href="">
-                            <i class="fa fa-whatsapp"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-twitter"></i>
-                        </a> 
-                        <a href=""> 
-                            <i class="fa fa-google"></i>
-                        </a> -->
-
-
-
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-3">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold">BlogifyHub</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: green; height: 2px" />
-            <p>BlogifyHub is an India No.1 Blog Website. We create more Emotion, Happiness, and Love
-              from yours.
-              We enjoyed to sharing your Happiness here.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">categeries</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: green; height: 2px" />
-            <p>
-              <a href="#!" class="text-white">Travel and Trekking</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Food and Fitness</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Nature Photography</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Music and Concert</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Money and Business</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Useful links</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: green; height: 2px" />
-            <p>
-              <a href="Aboutus.html" class="text-white">About</a>
-            </p>
-            <p>
-              <a href="contact.html" class="text-white">Contact</a>
-            </p>
-            <p>
-              <a href="index.html" class="text-white">Home</a>
-            </p>
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color:green; height: 2px" />
-            <p><i class="fa fa-home mr-3"></i> BlogifyHub-Chennai</p>
-            <p><i class="fa fa-envelope mr-3"></i> blogifyhub@gmail.com</p>
-            <p><i class="fa fa-phone mr-3"></i>+91 7708518716</p>
-            <p><i class="fa fa-phone mr-3"></i>+91 9790956597</p>
-          </div>
-          <!-- Grid column -->
+    <footer class="text-center text-lg-start bg-dark  text-white">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-between p-2 bg-secondary text-white">
+        <!-- Left -->
+        <div class="me-5 p-2" style="margin-left: 50px; align-items: center;">
+          <p style="bottom: 2px; padding-top: 1px;"> Get connected with us on social networks:</p>
         </div>
-        <!-- Grid row -->
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="">
+            <i class="fa fa-facebook p-3 " style="margin-right: 50px;"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-envelope p-3" style="margin-right: 50px;"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram p-3" style="margin-right: 50px;"></i>
+          </a>
+          <!--   <a href="">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-twitter"></i>
+                    </a> 
+                    <a href=""> 
+                        <i class="fa fa-google"></i>
+                    </a> -->
+
+
+
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-3">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">BlogifyHub</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: green; height: 2px" />
+              <p>BlogifyHub is an India No.1 Blog Website. We create more Emotion, Happiness, and Love
+                from yours.
+                We enjoyed to sharing your Happiness here.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">categeries</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: green; height: 2px" />
+              <p>
+                <a href="#!" class="text-white">Travel and Trekking</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Food and Fitness</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Nature Photography</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Music and Concert</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Money and Business</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: green; height: 2px" />
+              <p>
+                <a href="Aboutus.html" class="text-white">About</a>
+              </p>
+              <p>
+                <a href="contact.html" class="text-white">Contact Us</a>
+              </p>
+              <p>
+                <a href="index.html" class="text-white">Home</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color:green; height: 2px" />
+              <p><i class="fa fa-home mr-3"></i> BlogifyHub-Chennai</p>
+              <p><i class="fa fa-envelope mr-3"></i> blogifyhub@gmail.com</p>
+              <p><i class="fa fa-phone mr-3"></i>+91 7708518716</p>
+              <p><i class="fa fa-phone mr-3"></i>+91 9790956597</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2025 Copyright:
+        <a class="text-white" href="https://blogifyhub.com/">BlogifyHub.com</a>
       </div>
-    </section>
-    <!-- Section: Links  -->
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2025 Copyright:
-      <a class="text-white" href="https://blogifyhub.com/">BlogifyHub.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-
+  </div>
   </div>
   <!-- End of .container -->
   </div>
