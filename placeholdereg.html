@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 300px; margin: 20px auto; text-align: center; }
+        input, select, button { display: block; width: 100%; margin-top: 10px; padding: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 id="form-title">Registration Form</h2>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="email" id="email" placeholder="Enter your email">
+    <input type="password" id="password" placeholder="Enter your password">
+
+    <select id="language">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="ta">தமிழ்</option>
+    </select>
+
+    <button id="submit-btn">Register</button>
+</div>
+
+<script>
+// IIFE Translator Module
+const Translator = (function () {
+    const translations = {
+        en: { title: "Registration Form", name: "Enter your name", email: "Enter your email", password: "Enter your password", button: "Register" },
+        es: { title: "Formulario de Registro", name: "Ingrese su nombre", email: "Ingrese su correo electrónico", password: "Ingrese su contraseña", button: "Registrar" },
+        fr: { title: "Formulaire d'inscription", name: "Entrez votre nom", email: "Entrez votre email", password: "Entrez votre mot de passe", button: "S'inscrire" },
+        ta: { title: "பதிவு படிவம்", name: "உங்கள் பெயரை உள்ளிடவும்", email: "உங்கள் மின்னஞ்சலை உள்ளிடவும்", password: "உங்கள் கடவுச்சொல்லை உள்ளிடவும்", button: "பதிவு செய்யவும்" }
+    };
+
+    function translate(lang) {
+        return translations[lang] || translations["en"];
+    }
+
+    return { translate };
+})();
+
+// Function to update placeholders
+function updateFormLanguage() {
+    const selectedLang = document.getElementById("language").value;
+    const translation = Translator.translate(selectedLang);
+
+    document.getElementById("form-title").innerText = translation.title;
+    document.getElementById("name").placeholder = translation.name;
+    document.getElementById("email").placeholder = translation.email;
+    document.getElementById("password").placeholder = translation.password;
+    document.getElementById("submit-btn").innerText = translation.button;
+}
+
+// Event listener for language selection change
+document.getElementById("language").addEventListener("change", updateFormLanguage);
+</script>
+
+</body>
+</html>
