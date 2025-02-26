@@ -12,17 +12,23 @@
 
 
     <style>
+        .hidden-content {
+            display: none;
+        }
+
         .carousel-caption {
             position: absolute;
             top: 15%;
+
         }
-        
+
         html,
         body {
             margin: 0;
             padding: 0;
             overflow-x: hidden;
         }
+
         a {
             text-decoration: none;
             color: white;
@@ -51,7 +57,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="margin-left: 50px;">
-                <img src="logo-new.png" alt="" style="width:120px; height: 60px;;">
+                <a href="index.html"> <img src="logo-new.png" alt="" style="width:120px; height: 60px;;"> </a>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,70 +135,96 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
     <div class="row row-cols-1 row-cols-md-3">
         <div class="col mb-4 mt-5">
-            <div class="card">
+            <div class="card clickable-card" data-url="travel.html">
                 <img src="1.maha.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Travel and Trekking</h5>
                     <p class="card-text">Leave footprints on new paths, take memories for a lifetime.
-                        Explore the unknown, embrace the adventure, and let the journey shape you.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                        Explore the unknown, embrace the adventure, and let the journey shape you.
+                        <span class="hidden-content">Explore the unknown, embrace the adventure, and let the journey
+                            shape you.</span>
+                    </p>
+                    <button class="btn btn-primary read-more">Read More</button>
+                    <span class="badge bg-secondary">Recent Post</span>
                 </div>
             </div>
         </div>
         <div class="col mb-4 mt-5">
-            <div class="card">
+            <div class="card clickable-card" data-url="Foodblog.html ">
                 <img src="food.2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Food and Cook</h5>
                     <p class="card-text">Flavors tell stories, and every dish is a new adventure.
-                        Cook with love, savor every bite, and let food bring people together.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                        Cook with love, savor every bite, and let food bring people together.
+                        <span class="hidden-content">"Flavors tell stories—every dish is an adventure, cooked with love
+                            and shared with joy."</span>
+                    </p>
+                    <button class="btn btn-primary read-more">Read More</button>
+                    <span class="badge bg-secondary">Recent Post</span>
                 </div>
             </div>
         </div>
         <div class="col mb-4 mt-5 ">
-            <div class="card">
+            <div class="card clickable-card" data-url=" ">
                 <img src="man-2264825_1280.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Fitness and Nutrition</h5>
                     <p class="card-text">Fuel your body right, and strength will follow.
-                        Consistency in movement and mindful eating leads to a healthier you.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                        Consistency in movement and mindful eating leads to a healthier you. <span
+                            class="hidden-content">"Fuel your body right—strength follows, and mindful movement leads to
+                            a healthier you."</span>
+                    </p>
+                    <button class="btn btn-primary read-more">Read More</button>
+                    <span class="badge bg-warning text-dark">Not Yet Published</span>
+
                 </div>
             </div>
         </div>
         <div class="col mb-4 mt-5">
-            <div class="card">
+            <div class="card clickable-card" data-url=" ">
                 <img src="sunset-7760143_1280.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nature Photography</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                        additional content. This content is a little bit longer.<span class="hidden-content">"Capture
+                            the beauty of the wild—every frame tells a story of nature’s magic."</span>
+                    </p>
+                    <button class="btn btn-primary read-more">Read More</button>
+                    <span class="badge bg-warning text-dark">Not Yet Published</span>
+
                 </div>
             </div>
         </div>
         <div class="col mb-4 mt-5">
-            <div class="card">
+            <div class="card clickable-card" data-url=" ">
                 <img src="drums-7751985_1280.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Music and Concert</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                        additional content. This content is a little bit longer.<span class="hidden-content">"Feel the
+                            rhythm, live the moment—music brings souls together in harmony."</span>
+                    </p>
+                    <button class="btn btn-primary read-more">Read More</button>
+                    <span class="badge bg-warning text-dark">Not Yet Published</span>
+
                 </div>
             </div>
         </div>
         <div class="col mb-4 mt-5">
-            <div class="card">
+            <div class="card clickable-card" data-url=" ">
                 <img src="money.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Money and Business</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                        additional content. This content is a little bit longer.<span class="hidden-content">"Smart
+                            moves today build financial freedom tomorrow—grow, invest, succeed."</span>
+                    </p>
+                    <button class="btn btn-primary read-more">Read More</button>
+                    <span class="badge bg-warning text-dark">Not Yet Published</span>
+
                 </div>
             </div>
         </div>
@@ -336,6 +368,28 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
 
-</body>
-
-</html>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".clickable-card").forEach(function (card) {
+                card.addEventListener("click", function (event) {
+                    // Check if the clicked element is the "Read More" button
+                    if (event.target.classList.contains("read-more")) {
+                        let content = event.target.parentElement.querySelector(".hidden-content");
+                        if (content.style.display === "none" || content.style.display === "") {
+                            content.style.display = "inline";
+                            event.target.innerText = "Read Less";
+                        } else {
+                            content.style.display = "none";
+                            event.target.innerText = "Read More";
+                        }
+                        // Prevent card click from triggering redirect
+                        event.stopPropagation();
+                    } else {
+                        // Redirect only if the user clicks outside the "Read More" button
+                        let url = this.getAttribute("data-url");
+                        window.location.href = url;
+                    }
+                });
+            });
+        });
+    </script>
